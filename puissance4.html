@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choisissez votre pseudo et votre couleur de pion !</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="puissance4.js"></script>
+    <script src="config.js"></script>
+</head>
+<body>
+<form id="formulaire" method="POST">
+
+    <div id="info1">
+        <input name="joueur1" id="joueur1" type="text" placeholder="Joueur 1">
+        <select id="couleur1" name="couleur">
+
+            <option value="yellow">Jaune</option>
+            <option value="green">Vert</option>
+            <option value="blue">Bleu</option>
+            <option value="red">Rouge</option>
+        </select><br><br></div>
+
+    <div id="info2">
+        <input id="joueur2" type="text" placeholder="Joueur 2">
+        <select id="couleur2" name="couleur">
+            <option value="yellow">Jaune</option>
+            <option value="green">Vert</option>
+            <option value="blue">Bleu</option>
+            <option value="red">Rouge</option>
+        </select><br><br>
+    </div>
+    <audio id="audio" src="Mario.mp3"></audio>
+    <div id="jouer">
+        <button id="envoyez">Jouez</button>
+
+    </div>
+</form>
+
+<div id="jeu">
+
+</div>
+<br><br>
+
+<div id="scores">
+    <div class="scores">
+        <div>
+            <span id="span_un"></span>
+            <span id="playerOne">0</span>
+        </div>
+        <div>
+            <span id="span_deux"></span>
+            <span id="playerTwo">0</span>
+        </div>
+    </div>
+</div>
+<div id="input" class="hide">
+    <button id='restart'>Restart</button>
+    <button id="new">Nouvelle partie</button>
+</div>
+
+<div id="body">
+</div>
+</body>
+</html>

@@ -1,0 +1,232 @@
+body {
+    text-align: center;
+    background-image: url("unnamed.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#jeu {
+    background-color: darkblue;
+    display: inline-block;
+}
+
+.hide {
+    display: none;
+}
+
+.y {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 5px;
+}
+
+.y.empty {
+    cursor: pointer;
+}
+
+.y.next-red {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.y.next-yellow {
+    background-color: rgba(255, 255, 0, 0.2);
+}
+
+.y.next-green {
+    background-color: green;
+}
+
+.y.next-bleu {
+    background-color: blue;
+}
+
+.y.red {
+    background-color: red;
+}
+
+.y.yellow {
+    background-color: yellow;
+}
+
+.y.green {
+    background-color: green;
+}
+
+.y.blue {
+    background-color: blue;
+}
+
+#infos1 {
+    border-width: medium;
+    margin-bottom: 2%;
+    color: white;
+    font-weight: bold;
+}
+
+#infos2 {
+    margin-bottom: 2%;
+    color: white;
+    font-weight: bold;
+}
+
+#jouer > button#envoyez {
+    display: inline-flex;
+    position: center;
+    margin-top: 1em;
+    padding: 0.75em 1em;
+    outline: none;
+    border: none;
+    border-radius: 3em;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #7d5fff;
+    box-shadow: 0 0.5em 1em -0.5em rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#jouer > button#envoyez:hover,
+#jouer > button#envoyez:focus {
+    background-color: #886dff;
+}
+
+button#envoyez:active {
+    background-color: #7158e2;
+    transform: translateY(2px);
+}
+
+#input > button#restart {
+    display: inline-flex;
+    position: center;
+    margin-top: 1em;
+    padding: 0.75em 1em;
+    outline: none;
+    border: none;
+    border-radius: 3em;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #7d5fff;
+    box-shadow: 0 0.5em 1em -0.5em rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#input > button#restart:hover,
+#input > button#restart:focus {
+    background-color: #886dff;
+}
+
+button#restart:active {
+    background-color: #7158e2;
+    transform: translateY(2px);
+}
+
+#input > button#new {
+    display: inline-flex;
+    position: center;
+    margin-top: 1em;
+    padding: 0.75em 1em;
+    outline: none;
+    border: none;
+    border-radius: 3em;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #7d5fff;
+    box-shadow: 0 0.5em 1em -0.5em rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    margin-bottom: 40%;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#input > button#new:hover,
+#input > button#new:focus {
+    background-color: #886dff;
+}
+
+button#new:active {
+    background-color: #7158e2;
+    transform: translateY(2px);
+}
+
+#joueur1 {
+    padding: 6px;
+    font-size: 17px;
+    text-align: left;
+    border-width: 5px;
+    border-radius: 50px;
+    border-style: solid;
+    background-color: white;
+    border-color: black;
+}
+
+#joueur2 {
+    padding: 6px;
+    font-size: 17px;
+    text-align: left;
+    border-width: 5px;
+    border-radius: 50px;
+    border-style: solid;
+    background-color: white;
+    border-color: black;
+}
+
+#couleur1 {
+    padding: 6px;
+    font-size: 17px;
+    text-align: left;
+    border-width: 5px;
+    border-radius: 50px;
+    border-style: solid;
+    background-color: white;
+    border-color: black;
+}
+
+#couleur2 {
+    padding: 6px;
+    font-size: 17px;
+    text-align: left;
+    border-width: 5px;
+    border-radius: 50px;
+    border-style: solid;
+    background-color: white;
+    border-color: black;
+}
+
+#formulaire {
+    margin-top: 10%;
+}
+
+#scores > .scores {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#scores > .scores > div {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.75em;
+    margin: 0.5em;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: darkred;
+    border-radius: 0.25em;
+    color: white;
+}
+
+#scores > .scores > div > span:first-child {
+    margin-bottom: 0.5em;
+}
+
+#scores > .scores > div > span:last-child {
+    font-size: 1.5em;
+}
+
